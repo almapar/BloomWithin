@@ -1,0 +1,43 @@
+/* Background video */
+.container {
+	width: 100%;
+	height: calc(100vh);
+	/* background-color: rgba(0, 0, 0, 0.4); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background-clip {
+	width: 100%;
+	height: calc(100vh);
+	object-fit: cover;
+}
+
+.video-background {
+	position: fixed;
+	z-index: 0;
+	transform: scale(1.1);
+	top: 0px;
+}
+
+main {
+	position: absolute;
+	top: calc(110px + calc(100vh - 140px));
+	width: 100%;
+	max-width: 60%;
+	padding: 32px;
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	box-sizing: border-box;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+
+	border: solid 1px rgba(255, 255, 255, 0.3);
+	transition: background-color 0.3s ease;
+}
+
+.unblurred-main {
+	background-color: whitesmoke;
+}
