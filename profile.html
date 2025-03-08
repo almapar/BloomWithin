@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile and Volunteering</title>
+    <!-- Link to external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- User Avatar and Information Section -->
+    <section class="user-profile">
+      <!-- User's Avatar Image -->
+      <div class="avatar">
+        <!-- Profile picture with alt text for accessibility -->
+        <img src="profile-avatar.jpg" alt="User Avatar" />
+      </div>
+      <div class="user-info">
+        <!-- Display user name -->
+        <h1>John Doe</h1>
+        <!-- Display user role/title -->
+        <p>Software Developer</p>
+      </div>
+    </section>
+
+    <!-- Profile Information Section -->
+    <section class="profile-info">
+      <h2>About Me</h2>
+      <!-- Brief introduction about the user -->
+      <p>
+        I'm a passionate developer who loves solving problems and creating
+        software that makes a difference in people's lives.
+      </p>
+
+      <!-- Skills and Goals section -->
+      <div class="skills-goals">
+        <div>
+          <h3>Skills</h3>
+          <!-- List of user skills -->
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Goals</h3>
+          <!-- List of user goals -->
+          <ul>
+            <li>Master Machine Learning</li>
+            <li>Contribute to Open Source</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Example of a CSS Progress Bar for Skill Level -->
+      <div class="skill-progress">
+        <!-- Displaying skill progress for JavaScript -->
+        <p>JavaScript: <span class="progress-bar" style="width: 80%"></span></p>
+      </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section class="volunteering">
+      <h2>Volunteering Activities</h2>
+      <!-- List of volunteering activities with corresponding icons -->
+      <div class="volunteer-item">
+        <img src="travel-icon.png" alt="Travel Icon" />
+        <!-- Description of volunteering activity -->
+        <p>Travel for environmental conservation</p>
+      </div>
+      <div class="volunteer-item">
+        <img src="community-work-icon.png" alt="Community Work Icon" />
+        <!-- Description of another volunteering activity -->
+        <p>Community work to support local initiatives</p>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests">
+      <h2>My Interests</h2>
+      <!-- List of user interests with corresponding icons -->
+      <div class="interest-item">
+        <img src="tree-planting-icon.png" alt="Tree Planting" />
+        <!-- Interest description -->
+        <p>Planting Trees</p>
+      </div>
+      <div class="interest-item">
+        <img src="coast-cleanup-icon.png" alt="Coast Cleanup" />
+        <!-- Another interest description -->
+        <p>Cleaning the Coasts</p>
+      </div>
+    </section>
+
+    <!-- Calendar or Availability Table Section -->
+    <section class="calendar">
+      <h2>Availability</h2>
+      <!-- A simple table displaying availability -->
+      <table>
+        <thead>
+          <tr>
+            <!-- Table headers for Day and Available Time -->
+            <th>Day</th>
+            <th>Available Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Availability for each day -->
+          <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>1:00 PM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>9:00 AM - 12:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <!-- Form to collect contact information from the user -->
+      <form action="#" method="POST">
+        <!-- User's Name Input Field -->
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- User's Email Input Field -->
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Message Input Field -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- Link to the "4-page editor" page -->
+      <p>Back to <a href="editor-page.html">4-page editor</a></p>
+    </footer>
+  </body>
+</html>
