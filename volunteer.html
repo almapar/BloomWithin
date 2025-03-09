@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<link rel = "stylesheet" href="style.css">
+
+	<name="description"
+			content="A website for your health and wellbeing."/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send"
+		/>
+	</head>
+	<body>
+		<header>
+			<img
+				class="logo"
+				src="images/logo.jpg"
+				alt="logo"
+				width="50px"
+				height="50px"
+			/>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Feedback</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#">
+				<button>Volunteer</button>
+			</a>
+		</header>
+
+
+
+
+
+
+
+<h1>Volunteering Programs</h1>
+
+  
+<label for="filter">This is the volunteer page, you can sort the volunteer programs using the dropdown menu on the right.</label>
+<select name="filter" id="filter" placeholder="Sort by:">
+  <option value="mostpopular">Most Popular</option>
+  <option value="leastpopular">Least Popular</option>
+  <option value="cost">Cost</option>
+</select>
+
+  <body>
+  <main>
+
+    <div class = "containermain" id="container1" >
+
+    <!-- picture box-->
+    <div class = "box"  >
+      
+        <h2> Mobile Health Clinics </h2>
+              <p>Are you interested in volunteering to help rural communities receive urgent healthcare? We are in need of volunteers worldwide to help us work towards this goal.</p>
+
+      </div>
+      <!-- text box-->
+    <div class = "box" >
+        <h2> Programme Specifications</h2>
+        <ul>
+          <li> 📍Kenya, Fiji, Colombia </li>
+          <li>30 hours weekly</li>
+          <li>Free food and transport provided </li>
+        </ul>
+
+         
+      </div>
+      <!-- extra info box-->
+    <div class = "box">
+        <h2>Volunteer Specifications </h2>
+        <p>Experienced medical practitioners or medical students required urgently. 
+      </div>
+    </div>  
+   
+    
+    <div class= "containermain" id ="container2">
+      <div class="box" >
+        <h2> Mental Health Workshops</h2>
+                <p>Help us organise and run support groups to raise awareness about mental health issues and provide resources for mental well-being. Offer counseling, stress-management techniques, and coping strategies</p>
+      </div>
+        <div class="box">
+          <h2> Programme Specifications</h2>
+        <ul>
+          <li> 📍Ask your local library! </li>
+          <li>3 workshops weekly</li>
+          <li>Free refreshments on-site </li>
+        </ul>
+
+        </div>
+    <div class= "box" >
+      <h2>Volunteer Specifications</h2>
+      <p>Some experience in counseling or therapy is desired but training is provided</p>
+    </div>
+
+    </div>
+
+    
+
+       <div class= "containermain" id ="container3">
+
+      <div class="box" >
+        <h2> Youth Health Ambassadors</h2>
+                <p>Help us organise and run support groups to raise awareness about mental health issues and provide resources for mental well-being. Offer counseling, stress-management techniques, and coping strategies</p>
+
+      </div>
+
+        <div class="box">
+        <h2> Programme Specifications</h2>
+        <ul>
+          <li>📍Located in Hastings </li>
+          <li>Flexible hours</li>
+          <li>Imbursed travel fees </li>
+        </ul>
+
+        </div>
+
+    <div class= "box" >
+      <h2>Volunteer Specifications</h2>
+      <p>Some experience in counseling is desired but training is provided.</p>
+
+
+    </div>
+
+    </div>
+
+ 
+
+    <div class= "containermain" id ="container4">
+
+      <div class="box" >
+        <h2> Nutrition and Food Security Initiative</h2>
+                <p>Are you interested in helping people maintain nutritional value in their diet? We are looking for volunteers who can work with our food bank partners to distribute much needed food to those in need. </p>
+
+      </div>
+
+        <div class="box">
+          <h2> Programme Specifications</h2>
+        <ul>
+          <li> 📍Located in Peckham </li>
+          <li>20 hours required weekly</li>
+          <li>Imbursed travel fees </li>
+          <li> Free lunch </li>
+        </ul>
+        </div>
+
+      
+
+    <div class= "box" >
+      <h2>Volunteer Specifications</h2>
+      <p>Some experience in hospitality is preferred, but we are happy to train you. </p>
+
+
+    </div>
+
+    </div>
+
+
+
+                         
+    
+      
+
+
+  </main>
+  </body>
+
+<div class ="containerform">
+<!-- feedback form-->
+    <div class = "feedbackbox" id="box1">
+  <fieldset class="PersonalDetails"> 
+  
+  <ul>
+  <h2>Personal Details</h2>
+
+  <!-- flex for the input boxes of the form-->
+  <li><label for ="name"> Full Name: </label>
+      <input type = "text" name = "name" id = "name"</li>
+   
+<li><label for ="email"> Email Address: </label>
+      <input type = "email" name = "email" id = "email"></li>
+
+<li><label for ="phone"> Phone Number: </label>
+      <input type = "tel" name = "telephone" id = "telephone"> </li>
+        <div class ="bloombox">
+        <img src="https://github.com/almapar/BloomWithin/blob/main/images/bloomwithin_logo_only.png?raw=true" id="bloomformlogo" height="250px">
+        </div>
+
+    </fieldset>
+    </div>
+
+
+
+<!-- box 2 (feedback box)-->
+<div class ="feedbackbox" id="box2">
+<form>
+
+<!-- messes up when changed to id, kept as class-->
+<fieldset class = "Feedback">
+<h2>Give us your thoughts!</h2> 
+<label for ="feedbackarea"> Share anything you'd like us to know. </label>
+<div class ="buttoncontainer">
+<input type = "submit" value = "submit" id="submitbutton">
+<input type = "button" value ="cancel" id ="cancelbutton">
+</div>
+        <textarea name = "feedbackarea" id = "feedbackarea" rows="15" cols="40" placeholder="Type here (Maximum 300 words)"></textarea>
+
+
+       
+</fieldset>
+
+
+      
+        <!-- star rating system-->
+        <div class="rating-container"></div>
+      <h3> Rate us! </h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"</link>
+
+
+  <input type="radio" name="rate" id="rate-5">
+  <label for="5-star" class="fa-solid fa-star"></label>
+  <input type="radio" name="rate" id="rate-4">
+  <label for="4-star" class="fa-solid fa-star"></label>
+  <input type="radio" name="rate" id="rate-3">
+  <label for="3-star" class="fa-solid fa-star"></label>
+  <input type="radio" name="rate" id="rate-2">
+  <label for="3-star" class="fa-solid fa-star"></label>
+  <input type="radio" name="rate" id="rate-1">
+  <label for="1-star" class="fa-solid fa-star"></label>
+</div>
+</form>
+
+
+</div>
+
+  
+  
+
+
+</div>
+
+
+  <!-- footer -->
+
+	<footer>
+			<div class="row">
+				<div class="col">
+					<img src="images/logo.jpg" class="logo" />
+					<h2>Bloom Within™</h2>
+					<p class="slogan">
+					Nurture Your Body, Bloom from Within.
+					</p>
+				</div>
+				<div class="col">
+					<h3><u>Office</u></h3>
+					<p>Paraschiv Co.</p>
+					<p>357 Strand, London</p>
+					<p>United Kingdom, EC1N 8AT</p>
+					<p class="email-id">paraschivalexandramaria@yahoo.com</p>
+					<h4>+44 7394 220 635</h4>
+				</div>
+				<div class="col">
+					<h3><u>Links</u></h3>
+					<ul>
+						<li><a href="https://w207760.users.ecs.westminster.ac.uk/207760/home.html">Home</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="https://w2067475.users.ecs.westminster.ac.uk/2067475/volunteer.html">Volunteer</a></li>
+						<li><a href="https://w2116326.users.ecs.westminster.ac.uk/2116326/the_above_file_names.html">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3><u>Newsletter</u></h3>
+					<form>
+						<input type="email" placeholder="Enter your email ID" />
+						<path
+							d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+						/>
+						</svg>
+						<button type="submit">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24px"
+								viewBox="0 -960 960 960"
+								width="24px"
+								fill="#000000"
+							>
+								<path
+									d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+								/>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Bloom Within © 2025 - All Rights Reserved
+			</p>
+		</footer>
+	</body>
+	<script src="app.js"></script>
+	<script src="home.js"></script>
+
+
+
+
+<!-- CSS section -->
+
+<style>
+
+*{
+  text-align:center;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:60px;
+  color:white;}
+
+p {
+  font-size: 16px;
+  font-weight:bold;}
+
+li {
+  list-style: none;
+  padding: 5px;}
+
+h2 {
+  font-weight: bold;
+  color:#e78284;
+  font-size:30px;}
+
+/* div for the dropdown box */
+
+select{
+  border:none;
+  padding: 5px;
+  margin-left:80%;
+  border-radius:5px;
+  
+}
+
+select:focus{
+  outline:none;
+}
+
+
+
+
+label {
+  display: inline;
+  width: 120px;
+  padding: 8px;
+  font-weight: bold;}
+
+.PersonalDetails {
+  padding: 5px;
+  margin: 0;
+  border-style: none;}
+
+.Feedback {
+  border-style: none;}
+
+/* the container template for the card panels with the flower gif background */
+.containermain{
+  display:flex;
+  background-image:url("https://i.pinimg.com/originals/d6/99/1b/d6991b44f2852a08186eae28dabc841f.gif");
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding:20px;
+  color:black;
+  border: 5px solid white;
+  border-radius:5px;
+  margin:30px;}
+
+/* background of the page */
+body{
+  background-color:#ea999c;
+}
+
+
+.containerform{
+  display:flex;
+  padding:10px;
+  width:800px;
+}
+
+/* main template for all boxes */
+.box{
+  width:50%;
+  height:45%px;
+  font-size:15px;
+  text-align:center;
+  border-radius:15px;
+  background-color:#f5e0dc;
+  border:5px solid white;
+  padding:5px;
+  margin:20px;
+
+
+}
+
+.feedbackbox{
+  border:10px solid white;
+}
+/* Feedback form boxes */
+#box1{
+  background-color:lavender;
+  border-style:solid none solid solid;
+}
+
+#box2{
+  background-color:lavender;
+    border-style:solid solid solid none;
+}
+
+#container2, #container3, #container4{
+  margin:20px;
+  padding:5px;
+}
+
+/* help for this bit received from stack overflow:https://stackoverflow.com/questions/72279140/star-rating-turned-around-html-css. Stars appear wonky without it */
+input:not(:checked)~label:hover,
+label:hover~input:not(checked)~label {
+  color: #fd4;
+}
+
+/*rating stars icons from font awesome */
+.rating-container {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding:10px;
+}
+
+
+input[type="radio"] {
+  display:none;
+} 
+
+/* some styling for the form buttons, had to declare separately */
+input[type="button"]{
+  background-color:red;
+  padding:5px;
+  border-radius:10px;
+}
+
+input[type="submit"]{
+  background-color:#f5e0dc;
+  padding:10px;
+  border-radius:10px;
+
+}
+.bloombox{
+  width:50%;
+  padding:20px;
+  margin-right:50%;
+  margin-left:auto;
+}
+
+.reviewbox{
+  padding:20px;
+  border-style:none;
+}
+
+
+
