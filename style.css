@@ -110,3 +110,120 @@ button:hover {
 .link .dropdown li {
 	padding: 0;
 }
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: 2000px;
+	background: whitesmoke;
+	z-index: 1;
+	color: black;
+	padding: 50px 0 30px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+footer .row {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+footer .col {
+	flex: 1;
+	min-width: 250px;
+	padding: 10px;
+}
+
+footer .logo {
+	width: 80px;
+	float: left;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+
+.col h3 {
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.email-id {
+	width: fit-content;
+	border-bottom: 1px solid #927c90;
+	margin: 20px 0;
+	transition: all 0.3s ease 0s;
+}
+
+.email-id:hover {
+	color: #9d899b;
+	cursor: pointer;
+}
+
+footer ul li {
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease 0s;
+}
+
+footer ul li a:hover {
+	color: #9d899b;
+}
+
+.col h2 {
+	margin-left: 20px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+form {
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	margin-bottom: 50px;
+}
+
+.slogan {
+	font-size: medium;
+}
+
+form input {
+	width: 100%;
+	background: transparent;
+	color: black;
+	border: 0;
+	outline: none;
+}
+
+hr {
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid black;
+	margin: 20px auto;
+}
+
+.copyright {
+	text-align: center;
+}
+
+@media (max-width: 700px) {
+	footer {
+		bottom: unset;
+		margin-top: 10px;
+	}
+
+	.col {
+		flex-basis: 100%;
+	}
+}
