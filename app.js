@@ -16,3 +16,11 @@ function hideAndUnhideHeader() {
 
 document.addEventListener("scroll", hideAndUnhideHeader);
 // window.onscroll += hideAndUnhideHeader;
+
+const hamburger = document.querySelector(".hamburger");
+const nav_links = document.querySelector(".nav_links");
+
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	nav_links.classList.toggle("open");
+});

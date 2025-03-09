@@ -38,3 +38,4 @@ function mainExpand() {
 }
 
 document.addEventListener("scroll", mainExpand);
+mainExpand();

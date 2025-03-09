@@ -113,15 +113,14 @@ button:hover {
 
 footer {
 	width: 100%;
-	position: absolute;
 	bottom: 0;
-	top: 2000px;
 	background: whitesmoke;
 	z-index: 1;
 	color: black;
 	padding: 50px 0 30px;
 	font-size: 13px;
 	line-height: 20px;
+	border-radius: 30px;
 }
 
 footer .row {
@@ -217,7 +216,12 @@ hr {
 	text-align: center;
 }
 
-@media (max-width: 700px) {
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
 	footer {
 		bottom: unset;
 		margin-top: 10px;
@@ -226,4 +230,63 @@ hr {
 	.col {
 		flex-basis: 100%;
 	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav_links {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: whitesmoke;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.cta {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: whitesmoke;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.link a {
+		margin: 16px 0;
+	}
+
+	.open {
+		left: 0;
+	}
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: black;
+	z-index: 9999999;
 }
