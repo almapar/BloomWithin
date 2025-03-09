@@ -80,3 +80,33 @@ button {
 button:hover {
 	background-color: rgba(120, 162, 143, 0.8);
 }
+
+.link {
+	position: relative;
+	box-sizing: border-box;
+}
+
+.link .dropdown {
+	display: none;
+}
+
+.link:hover .dropdown {
+	display: flex;
+}
+
+.link .dropdown {
+	position: absolute;
+	padding: 24px;
+	padding-top: calc(36px + 24px);
+	gap: 24px;
+	transform: translateX(-25%);
+	flex-direction: column;
+	background-color: whitesmoke;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 147.4px;
+}
+
+.link .dropdown li {
+	padding: 0;
+}
