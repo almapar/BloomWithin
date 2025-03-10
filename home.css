@@ -41,3 +41,30 @@ main {
 .unblurred-main {
 	background-color: white;
 }
+
+a.health {
+	color: #77a190;
+	font-size: xx-large;
+}
+
+a.life {
+	color: #9d899b;
+	font-size: xx-large;
+}
+
+.left {
+	margin-left: 210px;
+}
+
+.right {
+	margin-right: 210px;
+	float: right;
+}
+
+.description-services {
+	margin-top: 60px;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	color: gray;
+}

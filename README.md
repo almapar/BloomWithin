@@ -1,4 +1,5 @@
 # Bloom Within
+
 Bloom Within is a holistic wellness platform dedicated to empowering individuals on their journey toward optimal health and well-being. Guided by our motto, "Nurture your body, bloom from within," we offer a comprehensive range of resources and personalized support designed to foster physical vitality and inner harmony.
 
 Our Offerings:

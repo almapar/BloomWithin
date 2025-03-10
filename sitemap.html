@@ -1,248 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sitemap</title>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Container for centering and responsiveness */
-      .sitemap-container {
-        max-width: 900px;
-        margin: 2rem auto;
-        text-align: center;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sitemap</title>
+		<!-- Global CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/* Container for centering and responsiveness */
+			.sitemap-container {
+				max-width: 900px;
+				margin: 2rem auto;
+				text-align: center;
+			}
 
-      /* SVG scales responsively while preserving aspect ratio */
-      svg {
-        width: 100%;
-        height: auto;
-        max-height: 900px; /* Expanded height for additional groups */
-        border: 1px solid #ccc; /* Optional visual boundary */
-      }
+			/* SVG scales responsively while preserving aspect ratio */
+			svg {
+				width: 100%;
+				height: auto;
+				max-height: 900px; /* Expanded height for additional groups */
+				border: 1px solid #ccc; /* Optional visual boundary */
+			}
 
-      /* Default node style (each page is represented as a circle) */
-      .node {
-        fill: #baa7bf; /* Purple tone matching the brand */
-        cursor: pointer;
-        transition: fill 0.3s ease, transform 0.3s ease; /* Change fill and scale on hover */
-        outline: none;
-      }
+			/* Default node style (each page is represented as a circle) */
+			.node {
+				fill: #baa7bf; /* Purple tone matching the brand */
+				cursor: pointer;
+				transition: fill 0.3s ease, transform 0.3s ease; /* Change fill and scale on hover */
+				outline: none;
+			}
 
-      /* Hover effect: change fill color and slightly scale the node */
-      .node:hover {
-        fill: #91bca6;
-        transform: scale(1.1);
-      }
+			/* Hover effect: change fill color and slightly scale the node */
+			.node:hover {
+				fill: #91bca6;
+				transform: scale(1.1);
+			}
 
-      /* Keyboard focus style for accessibility */
-      .node:focus {
-        stroke: #2f4f4f;
-        stroke-width: 3;
-      }
+			/* Keyboard focus style for accessibility */
+			.node:focus {
+				stroke: #2f4f4f;
+				stroke-width: 3;
+			}
 
-      /* Styling for text labels inside nodes */
-      text {
-        pointer-events: none; /* So that clicks register on the circle */
-        font-family: Arial, sans-serif;
-        fill: #ffffff;
-      }
+			/* Styling for text labels inside nodes */
+			text {
+				pointer-events: none; /* So that clicks register on the circle */
+				font-family: Arial, sans-serif;
+				fill: #ffffff;
+			}
 
-      /* Styling for group labels (e.g., "Content Pages") */
-      .group-label {
-        font-family: Arial, sans-serif;
-        fill: #2f4f4f;
-        font-size: 18px;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header with Navbar -->
-    <header>
-      <!-- Logo image -->
-      <img
-        class="logo"
-        src="bloomwithin_logo.png"
-        alt="Bloom Within Logo"
-        width="50"
-        height="50"
-      />
-      <!-- Navigation Links -->
-      <nav>
-        <ul class="nav_links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <!-- Call-to-action button linking to the volunteer page -->
-      <a class="cta" href="volunteer.html">
-        <button>Volunteer</button>
-      </a>
-    </header>
+			/* Styling for group labels (e.g., "Content Pages") */
+			.group-label {
+				font-family: Arial, sans-serif;
+				fill: #2f4f4f;
+				font-size: 18px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header with Navbar -->
+		<header>
+			<!-- Logo image -->
+			<img
+				class="logo"
+				src="bloomwithin_logo.png"
+				alt="Bloom Within Logo"
+				width="50"
+				height="50"
+			/>
+			<!-- Navigation Links -->
+			<nav>
+				<ul class="nav_links">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+			<!-- Call-to-action button linking to the volunteer page -->
+			<a class="cta" href="volunteer.html">
+				<button>Volunteer</button>
+			</a>
+		</header>
 
-    <!-- Main content: SVG Sitemap -->
-    <section class="sitemap-container">
-      <!--
+		<!-- Main content: SVG Sitemap -->
+		<section class="sitemap-container">
+			<!--
         SVG element to represent the sitemap diagram.
         The viewBox is set to "0 0 900 900" to provide room for all nodes.
       -->
-      <svg
-        viewBox="0 0 900 900"
-        role="img"
-        aria-labelledby="sitemapTitle"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title id="sitemapTitle">Website Sitemap</title>
+			<svg
+				viewBox="0 0 900 900"
+				role="img"
+				aria-labelledby="sitemapTitle"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<title id="sitemapTitle">Website Sitemap</title>
 
-        <!-- ========================================
+				<!-- ========================================
              Top-Level Nodes and Their Connection Lines
              ======================================== -->
-        <!-- Connection line: Home -> Profile -->
-        <line x1="450" y1="100" x2="300" y2="200" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Connection line: Home -> Volunteering -->
-        <line x1="450" y1="100" x2="600" y2="200" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Connection line: Profile -> Interests -->
-        <line x1="300" y1="200" x2="200" y2="300" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Connection line: Profile -> Calendar -->
-        <line x1="300" y1="200" x2="400" y2="300" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Connection line: Home -> Contact -->
-        <line x1="450" y1="100" x2="600" y2="300" stroke="#2f4f4f" stroke-width="2" />
+				<!-- Connection line: Home -> Profile -->
+				<line
+					x1="450"
+					y1="100"
+					x2="300"
+					y2="200"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Connection line: Home -> Volunteering -->
+				<line
+					x1="450"
+					y1="100"
+					x2="600"
+					y2="200"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Connection line: Profile -> Interests -->
+				<line
+					x1="300"
+					y1="200"
+					x2="200"
+					y2="300"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Connection line: Profile -> Calendar -->
+				<line
+					x1="300"
+					y1="200"
+					x2="400"
+					y2="300"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Connection line: Home -> Contact -->
+				<line
+					x1="450"
+					y1="100"
+					x2="600"
+					y2="300"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
 
-        <!-- Top-Level Node: Home -->
-        <a xlink:href="home.html" tabindex="0" aria-label="Home Page">
-          <circle class="node" cx="450" cy="100" r="40"></circle>
-          <text x="450" y="105" text-anchor="middle" font-size="16">Home</text>
-        </a>
-        <!-- Top-Level Node: Profile -->
-        <a xlink:href="profile.html" tabindex="0" aria-label="Profile Page">
-          <circle class="node" cx="300" cy="200" r="35"></circle>
-          <text x="300" y="205" text-anchor="middle" font-size="14">Profile</text>
-        </a>
-        <!-- Top-Level Node: Volunteering -->
-        <a xlink:href="volunteering.html" tabindex="0" aria-label="Volunteering Page">
-          <circle class="node" cx="600" cy="200" r="35"></circle>
-          <text x="600" y="205" text-anchor="middle" font-size="14">Volunteer</text>
-        </a>
-        <!-- Top-Level Node: Interests -->
-        <a xlink:href="feedback.html" tabindex="0" aria-label="Feedback/Interests Page">
-          <circle class="node" cx="200" cy="300" r="30"></circle>
-          <text x="200" y="305" text-anchor="middle" font-size="12">Interests</text>
-        </a>
-        <!-- Top-Level Node: Calendar -->
-        <a xlink:href="calendar.html" tabindex="0" aria-label="Calendar Page">
-          <circle class="node" cx="400" cy="300" r="30"></circle>
-          <text x="400" y="305" text-anchor="middle" font-size="12">Calendar</text>
-        </a>
-        <!-- Top-Level Node: Contact -->
-        <a xlink:href="contact.html" tabindex="0" aria-label="Contact Page">
-          <circle class="node" cx="600" cy="300" r="35"></circle>
-          <text x="600" y="305" text-anchor="middle" font-size="14">Contact</text>
-        </a>
+				<!-- Top-Level Node: Home -->
+				<a xlink:href="home.html" tabindex="0" aria-label="Home Page">
+					<circle class="node" cx="450" cy="100" r="40"></circle>
+					<text x="450" y="105" text-anchor="middle" font-size="16">
+						Home
+					</text>
+				</a>
+				<!-- Top-Level Node: Profile -->
+				<a
+					xlink:href="profile.html"
+					tabindex="0"
+					aria-label="Profile Page"
+				>
+					<circle class="node" cx="300" cy="200" r="35"></circle>
+					<text x="300" y="205" text-anchor="middle" font-size="14">
+						Profile
+					</text>
+				</a>
+				<!-- Top-Level Node: Volunteering -->
+				<a
+					xlink:href="volunteering.html"
+					tabindex="0"
+					aria-label="Volunteering Page"
+				>
+					<circle class="node" cx="600" cy="200" r="35"></circle>
+					<text x="600" y="205" text-anchor="middle" font-size="14">
+						Volunteer
+					</text>
+				</a>
+				<!-- Top-Level Node: Interests -->
+				<a
+					xlink:href="feedback.html"
+					tabindex="0"
+					aria-label="Feedback/Interests Page"
+				>
+					<circle class="node" cx="200" cy="300" r="30"></circle>
+					<text x="200" y="305" text-anchor="middle" font-size="12">
+						Interests
+					</text>
+				</a>
+				<!-- Top-Level Node: Calendar -->
+				<a
+					xlink:href="calendar.html"
+					tabindex="0"
+					aria-label="Calendar Page"
+				>
+					<circle class="node" cx="400" cy="300" r="30"></circle>
+					<text x="400" y="305" text-anchor="middle" font-size="12">
+						Calendar
+					</text>
+				</a>
+				<!-- Top-Level Node: Contact -->
+				<a
+					xlink:href="contact.html"
+					tabindex="0"
+					aria-label="Contact Page"
+				>
+					<circle class="node" cx="600" cy="300" r="35"></circle>
+					<text x="600" y="305" text-anchor="middle" font-size="14">
+						Contact
+					</text>
+				</a>
 
-        <!-- ========================================
+				<!-- ========================================
              Additional Groups for Content, Editor, and Validation Pages
              ======================================== -->
 
-        <!-- ---- Content Pages Group ---- -->
-        <!-- Group Label for Content Pages -->
-        <text x="450" y="440" class="group-label" text-anchor="middle">
-          Content Pages
-        </text>
-        <!-- Vertical connection line from Home to the center of Content Group -->
-        <line x1="450" y1="100" x2="450" y2="480" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Horizontal connection lines from the group center (450,480) to each content node -->
-        <line x1="450" y1="480" x2="150" y2="480" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="480" x2="350" y2="480" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="480" x2="550" y2="480" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="480" x2="750" y2="480" stroke="#2f4f4f" stroke-width="2" />
+				<!-- ---- Content Pages Group ---- -->
+				<!-- Group Label for Content Pages -->
+				<text x="450" y="440" class="group-label" text-anchor="middle">
+					Content Pages
+				</text>
+				<!-- Vertical connection line from Home to the center of Content Group -->
+				<line
+					x1="450"
+					y1="100"
+					x2="450"
+					y2="480"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Horizontal connection lines from the group center (450,480) to each content node -->
+				<line
+					x1="450"
+					y1="480"
+					x2="150"
+					y2="480"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="480"
+					x2="350"
+					y2="480"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="480"
+					x2="550"
+					y2="480"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="480"
+					x2="750"
+					y2="480"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
 
-        <!-- Content Page Nodes -->
-        <a xlink:href="content_ST1.html" tabindex="0" aria-label="Content Page 1">
-          <circle class="node" cx="150" cy="480" r="20"></circle>
-          <text x="150" y="485" text-anchor="middle" font-size="10">ST1</text>
-        </a>
-        <a xlink:href="content_ST2.html" tabindex="0" aria-label="Content Page 2">
-          <circle class="node" cx="350" cy="480" r="20"></circle>
-          <text x="350" y="485" text-anchor="middle" font-size="10">ST2</text>
-        </a>
-        <a xlink:href="content_ST3.html" tabindex="0" aria-label="Content Page 3">
-          <circle class="node" cx="550" cy="480" r="20"></circle>
-          <text x="550" y="485" text-anchor="middle" font-size="10">ST3</text>
-        </a>
-        <a xlink:href="content_ST4.html" tabindex="0" aria-label="Content Page 4">
-          <circle class="node" cx="750" cy="480" r="20"></circle>
-          <text x="750" y="485" text-anchor="middle" font-size="10">ST4</text>
-        </a>
+				<!-- Content Page Nodes -->
+				<a
+					xlink:href="content_ST1.html"
+					tabindex="0"
+					aria-label="Content Page 1"
+				>
+					<circle class="node" cx="150" cy="480" r="20"></circle>
+					<text x="150" y="485" text-anchor="middle" font-size="10">
+						ST1
+					</text>
+				</a>
+				<a
+					xlink:href="content_ST2.html"
+					tabindex="0"
+					aria-label="Content Page 2"
+				>
+					<circle class="node" cx="350" cy="480" r="20"></circle>
+					<text x="350" y="485" text-anchor="middle" font-size="10">
+						ST2
+					</text>
+				</a>
+				<a
+					xlink:href="content_ST3.html"
+					tabindex="0"
+					aria-label="Content Page 3"
+				>
+					<circle class="node" cx="550" cy="480" r="20"></circle>
+					<text x="550" y="485" text-anchor="middle" font-size="10">
+						ST3
+					</text>
+				</a>
+				<a
+					xlink:href="content_ST4.html"
+					tabindex="0"
+					aria-label="Content Page 4"
+				>
+					<circle class="node" cx="750" cy="480" r="20"></circle>
+					<text x="750" y="485" text-anchor="middle" font-size="10">
+						ST4
+					</text>
+				</a>
 
-        <!-- ---- Editor Pages Group ---- -->
-        <!-- Group Label for Editor Pages -->
-        <text x="450" y="540" class="group-label" text-anchor="middle">
-          Editor Pages
-        </text>
-        <!-- Vertical connection line from Home to the center of Editor Group -->
-        <line x1="450" y1="100" x2="450" y2="580" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Horizontal connection lines from the group center (450,580) to each editor node -->
-        <line x1="450" y1="580" x2="150" y2="580" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="580" x2="350" y2="580" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="580" x2="550" y2="580" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="580" x2="750" y2="580" stroke="#2f4f4f" stroke-width="2" />
+				<!-- ---- Editor Pages Group ---- -->
+				<!-- Group Label for Editor Pages -->
+				<text x="450" y="540" class="group-label" text-anchor="middle">
+					Editor Pages
+				</text>
+				<!-- Vertical connection line from Home to the center of Editor Group -->
+				<line
+					x1="450"
+					y1="100"
+					x2="450"
+					y2="580"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Horizontal connection lines from the group center (450,580) to each editor node -->
+				<line
+					x1="450"
+					y1="580"
+					x2="150"
+					y2="580"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="580"
+					x2="350"
+					y2="580"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="580"
+					x2="550"
+					y2="580"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="580"
+					x2="750"
+					y2="580"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
 
-        <!-- Editor Page Nodes -->
-        <a xlink:href="pageEditor_ST1.html" tabindex="0" aria-label="Editor Page 1">
-          <circle class="node" cx="150" cy="580" r="20"></circle>
-          <text x="150" y="585" text-anchor="middle" font-size="10">E1</text>
-        </a>
-        <a xlink:href="pageEditor_ST2.html" tabindex="0" aria-label="Editor Page 2">
-          <circle class="node" cx="350" cy="580" r="20"></circle>
-          <text x="350" y="585" text-anchor="middle" font-size="10">E2</text>
-        </a>
-        <a xlink:href="pageEditor_ST3.html" tabindex="0" aria-label="Editor Page 3">
-          <circle class="node" cx="550" cy="580" r="20"></circle>
-          <text x="550" y="585" text-anchor="middle" font-size="10">E3</text>
-        </a>
-        <a xlink:href="pageEditor_ST4.html" tabindex="0" aria-label="Editor Page 4">
-          <circle class="node" cx="750" cy="580" r="20"></circle>
-          <text x="750" y="585" text-anchor="middle" font-size="10">E4</text>
-        </a>
+				<!-- Editor Page Nodes -->
+				<a
+					xlink:href="pageEditor_ST1.html"
+					tabindex="0"
+					aria-label="Editor Page 1"
+				>
+					<circle class="node" cx="150" cy="580" r="20"></circle>
+					<text x="150" y="585" text-anchor="middle" font-size="10">
+						E1
+					</text>
+				</a>
+				<a
+					xlink:href="pageEditor_ST2.html"
+					tabindex="0"
+					aria-label="Editor Page 2"
+				>
+					<circle class="node" cx="350" cy="580" r="20"></circle>
+					<text x="350" y="585" text-anchor="middle" font-size="10">
+						E2
+					</text>
+				</a>
+				<a
+					xlink:href="pageEditor_ST3.html"
+					tabindex="0"
+					aria-label="Editor Page 3"
+				>
+					<circle class="node" cx="550" cy="580" r="20"></circle>
+					<text x="550" y="585" text-anchor="middle" font-size="10">
+						E3
+					</text>
+				</a>
+				<a
+					xlink:href="pageEditor_ST4.html"
+					tabindex="0"
+					aria-label="Editor Page 4"
+				>
+					<circle class="node" cx="750" cy="580" r="20"></circle>
+					<text x="750" y="585" text-anchor="middle" font-size="10">
+						E4
+					</text>
+				</a>
 
-        <!-- ---- Validation Pages Group ---- -->
-        <!-- Group Label for Validation Pages -->
-        <text x="450" y="640" class="group-label" text-anchor="middle">
-          Validation Pages
-        </text>
-        <!-- Vertical connection line from Home to the center of Validation Group -->
-        <line x1="450" y1="100" x2="450" y2="680" stroke="#2f4f4f" stroke-width="2" />
-        <!-- Horizontal connection lines from the group center (450,680) to each validation node -->
-        <line x1="450" y1="680" x2="150" y2="680" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="680" x2="350" y2="680" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="680" x2="550" y2="680" stroke="#2f4f4f" stroke-width="2" />
-        <line x1="450" y1="680" x2="750" y2="680" stroke="#2f4f4f" stroke-width="2" />
+				<!-- ---- Validation Pages Group ---- -->
+				<!-- Group Label for Validation Pages -->
+				<text x="450" y="640" class="group-label" text-anchor="middle">
+					Validation Pages
+				</text>
+				<!-- Vertical connection line from Home to the center of Validation Group -->
+				<line
+					x1="450"
+					y1="100"
+					x2="450"
+					y2="680"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<!-- Horizontal connection lines from the group center (450,680) to each validation node -->
+				<line
+					x1="450"
+					y1="680"
+					x2="150"
+					y2="680"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="680"
+					x2="350"
+					y2="680"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="680"
+					x2="550"
+					y2="680"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
+				<line
+					x1="450"
+					y1="680"
+					x2="750"
+					y2="680"
+					stroke="#2f4f4f"
+					stroke-width="2"
+				/>
 
-        <!-- Validation Page Nodes -->
-        <a xlink:href="validation_ST1.html" tabindex="0" aria-label="Validation Page 1">
-          <circle class="node" cx="150" cy="680" r="20"></circle>
-          <text x="150" y="685" text-anchor="middle" font-size="10">V1</text>
-        </a>
-        <a xlink:href="validation_ST2.html" tabindex="0" aria-label="Validation Page 2">
-          <circle class="node" cx="350" cy="680" r="20"></circle>
-          <text x="350" y="685" text-anchor="middle" font-size="10">V2</text>
-        </a>
-        <a xlink:href="validation_ST3.html" tabindex="0" aria-label="Validation Page 3">
-          <circle class="node" cx="550" cy="680" r="20"></circle>
-          <text x="550" y="685" text-anchor="middle" font-size="10">V3</text>
-        </a>
-        <a xlink:href="validation_ST4.html" tabindex="0" aria-label="Validation Page 4">
-          <circle class="node" cx="750" cy="680" r="20"></circle>
-          <text x="750" y="685" text-anchor="middle" font-size="10">V4</text>
-        </a>
-      </svg>
-    </section>
+				<!-- Validation Page Nodes -->
+				<a
+					xlink:href="validation_ST1.html"
+					tabindex="0"
+					aria-label="Validation Page 1"
+				>
+					<circle class="node" cx="150" cy="680" r="20"></circle>
+					<text x="150" y="685" text-anchor="middle" font-size="10">
+						V1
+					</text>
+				</a>
+				<a
+					xlink:href="validation_ST2.html"
+					tabindex="0"
+					aria-label="Validation Page 2"
+				>
+					<circle class="node" cx="350" cy="680" r="20"></circle>
+					<text x="350" y="685" text-anchor="middle" font-size="10">
+						V2
+					</text>
+				</a>
+				<a
+					xlink:href="validation_ST3.html"
+					tabindex="0"
+					aria-label="Validation Page 3"
+				>
+					<circle class="node" cx="550" cy="680" r="20"></circle>
+					<text x="550" y="685" text-anchor="middle" font-size="10">
+						V3
+					</text>
+				</a>
+				<a
+					xlink:href="validation_ST4.html"
+					tabindex="0"
+					aria-label="Validation Page 4"
+				>
+					<circle class="node" cx="750" cy="680" r="20"></circle>
+					<text x="750" y="685" text-anchor="middle" font-size="10">
+						V4
+					</text>
+				</a>
+			</svg>
+		</section>
 
-    <!-- Footer with a link back to the Home page -->
-    <footer>
-      <p>Back to <a href="home.html">Home</a></p>
-    </footer>
-  </body>
+		<!-- Footer with a link back to the Home page -->
+		<footer>
+			<p>Back to <a href="home.html">Home</a></p>
+		</footer>
+	</body>
 </html>
