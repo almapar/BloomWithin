@@ -2,9 +2,6 @@
 
 /* Navigation bar */
 body {
-<<<<<<< HEAD
-	background-color: gray;
-=======
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -349,5 +346,4 @@ hr {
 #myBtn:hover {
 	background-color: #555;
 	box-shadow: rgba(0, 0, 0, 0.25); /* Add a dark-grey background on hover */
->>>>>>> 34d66295ff394fd4d00ca94364a42d308f264a9e
 }
