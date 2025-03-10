@@ -10,7 +10,7 @@
 }
 
 .happy p {
-	padding:30px;
+	padding: 30px;
 }
 
 .title {
@@ -18,4 +18,21 @@
 	flex-direction: column;
 	gap: 15px;
 	padding: 70px;
+}
+
+.fitness {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 30px;
+}
+
+.fitness img {
+	object-fit: cover;
+	float: right;
+}
+
+.fitness p {
+	padding: 30px;
 }
