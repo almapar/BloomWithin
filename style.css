@@ -317,3 +317,11 @@ hr {
 	background-color: black;
 	z-index: 9999999;
 }
+
+.title {
+	text-align: center;
+}
+
+.paragraph {
+	padding: 25px;
+}
