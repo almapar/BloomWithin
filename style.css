@@ -16,6 +16,10 @@ body {
 	font-family: "Montserrat";
 }
 
+button.cta {
+	color: white;
+}
+
 li,
 a,
 button {
