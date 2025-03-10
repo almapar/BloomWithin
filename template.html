@@ -10,32 +10,41 @@
 			content="A website for your health and wellbeing."
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=send"
-		/>
 	</head>
 	<body>
 		<header>
-			<img
-				class="logo"
-				src="images/bloomwithin_logo_only.png"
-				alt="logo"
-				width="50"
-				height="50"
-			/>
-			<nav>
-				<ul class="nav_links">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Feedback</a></li>
-				</ul>
-			</nav>
-			<button class="cta">Volunteer</button>
-			<div class="hamburger">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+			<div>
+				<img
+					class="logo"
+					src="images/bloomwithin_logo_only.png"
+					alt="logo"
+					width="50"
+					height="50"
+				/>
+			</div>
+			<div>
+				<nav>
+					<ul class="nav_links">
+						<li class="link">
+							<a href="#">About</a>
+							<ul class="dropdown">
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Sitemap</a></li>
+								<li><a href="#">User Profile</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Feedback</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<button class="cta">Volunteer</button>
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</div>
 		</header>
 		<footer>
@@ -74,14 +83,20 @@
 						<button type="submit">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								height="24px"
-								viewBox="0 -960 960 960"
-								width="24px"
-								fill="#000000"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-send-horizontal"
 							>
 								<path
-									d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"
+									d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"
 								/>
+								<path d="M6 12h16" />
 							</svg>
 						</button>
 					</form>
@@ -91,6 +106,5 @@
 			<p class="copyright">Bloom Within © 2025 - All Rights Reserved</p>
 		</footer>
 		<script src="app.js"></script>
-		<script src="home.js"></script>
 	</body>
 </html>
