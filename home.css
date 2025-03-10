@@ -141,3 +141,9 @@ a.life {
 .stacked img {
 	height: 50%;
 }
+
+.explore {
+	display: flex;
+	padding: 40px;
+	justify-content: center;
+}
