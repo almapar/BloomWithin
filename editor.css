@@ -1,0 +1,39 @@
+.title {
+	background-color: #b3a3b2;
+}
+
+.titles {
+	text-align: center;
+	padding: 20px;
+}
+
+.inspirations {
+	padding: 50px;
+}
+
+.inspirations h3 {
+	padding: 10px;
+}
+.inspirations li {
+	padding-left: 40px;
+}
+
+.inspirations li a {
+	transition: all 0.3s ease 0s;
+}
+
+.inspirations li a:hover {
+	color: #9d899b;
+}
+
+li {
+	padding-left: 40px;
+}
+
+li a {
+	transition: all 0.3s ease 0s;
+}
+
+li a:hover {
+	color: #9d899b;
+}
