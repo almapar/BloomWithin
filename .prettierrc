@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
 	"tabWidth": 4,
 	"useTabs": true
+=======
+  "tabWidth": 4,
+  "useTabs": true
+>>>>>>> 34d66295ff394fd4d00ca94364a42d308f264a9e
 }
