@@ -147,3 +147,33 @@ a.life {
 	padding: 40px;
 	justify-content: center;
 }
+
+.journal {
+	padding: 15px;
+	float: right;
+}
+
+.child {
+	padding: 15px;
+	display: flex;
+
+	justify-content: center;
+}
+
+.journal-description {
+	padding: 15px;
+	color: rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.child-description {
+	padding: 15px;
+	padding-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-left: 390px;
+	margin-right: 390px;
+}
