@@ -9,7 +9,7 @@
 }
 
 .background-clip {
-	width: 100%;
+	width: 100vw;
 	height: calc(100vh);
 	object-fit: cover;
 }
@@ -156,7 +156,6 @@ a.life {
 .child {
 	padding: 15px;
 	display: flex;
-
 	justify-content: center;
 }
 

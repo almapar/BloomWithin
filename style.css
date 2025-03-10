@@ -71,7 +71,7 @@ header > div:nth-child(2) {
 
 /* Applied when scrolling down */
 .headerUp {
-	transform: translateY(-110px);
+	transform: translateY(-120px);
 }
 
 .logo {

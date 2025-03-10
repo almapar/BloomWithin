@@ -4,3 +4,18 @@
 	justify-content: flex-end;
 	padding: 30px;
 }
+
+.happy img {
+	object-fit: cover;
+}
+
+.happy p {
+	padding:30px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 70px;
+}
