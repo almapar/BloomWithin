@@ -28,4 +28,3 @@ Progress Tracking Tools: Utilize our intuitive tools to monitor your health jour
 At Bloom Within, we believe that true wellness emerges from a harmonious balance of body and mind. Our mission is to provide you with the knowledge, tools, and support necessary to cultivate this balance, empowering you to thrive in all aspects of life.
 
 Embark on your path to holistic well-being with Bloom Within, and discover the transformative power of nurturing your body to bloom from within.
->>>>>>> 34d66295ff394fd4d00ca94364a42d308f264a9e
